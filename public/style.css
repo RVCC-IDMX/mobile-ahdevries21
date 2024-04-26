@@ -4,14 +4,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap");
 /* Custom properties */
 :root {
-  --clr-primary-100: hsl(45,100,98);
-  --clr-primary-200: hsl(358,100,93);
-  --clr-primary-300: hsl(146,29,63);
-  --clr-primary-400: hsl(120,100,7);
-  --clr-primary-500: hsl(213,74,15);
+  --clr-primary-100: #fffdf7;
+  --clr-primary-200: #ffd9da;
+  --clr-primary-300: #84bc9c;
+  --clr-primary-400: #002500;
+  --clr-primary-500: #0a2342;
   --ff-heading: "Domine";
   --ff-subheading: "Jacques Francios"
   --ff-body:"Hind Guntur";
+}
+
+body {
+  background-color: var(--clr-primary-100);
+  padding: 0 1em;
+}
+
+.container {
+  max-width: 80ch;
+  margin: 8vh auto;
 }
 
 h1, h2 {
@@ -30,10 +40,42 @@ h3 {
   font-weight: 500;
 }
 
-body {
-  background-color: var(--clr-primary-100);
-}
-
 svg {
   width: 0.75em;
+}
+
+/* CSS Starts Here */
+.skip-link {
+  position: relative;
+  left: 45%;
+}
+
+nav {
+  max-width: 100%;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-flex;
+  font-variant: small-caps;
+  font-size: 20px;
+  margin-inline: 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.link-github {
+  background: var(--clr-primary-300);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  color: black;
+  text-decoration: none;
 }
