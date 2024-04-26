@@ -1,0 +1,39 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap");
+/* Custom properties */
+:root {
+  --clr-primary-100: hsl(45,100,98);
+  --clr-primary-200: hsl(358,100,93);
+  --clr-primary-300: hsl(146,29,63);
+  --clr-primary-400: hsl(120,100,7);
+  --clr-primary-500: hsl(213,74,15);
+  --ff-heading: "Domine";
+  --ff-subheading: "Jacques Francios"
+  --ff-body:"Hind Guntur";
+}
+
+h1, h2 {
+  font-family: var(--ff-heading);
+}
+
+p,
+ul,
+li {
+  font-family: "Hind Guntur";
+  font-weight: 100;
+}
+
+h3 {
+  font-family: "Jacques Francios";
+  font-weight: 500;
+}
+
+body {
+  background-color: var(--clr-primary-100);
+}
+
+svg {
+  width: 0.75em;
+}
